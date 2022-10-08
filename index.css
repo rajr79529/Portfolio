@@ -402,9 +402,7 @@ textarea,
       text-align: center;
       background-color: black;
    }
-   #menu_check {
-      display: block;
-   }
+
    #menu_check :checked ~ .ul-list {
       left: 0%;
       background-color: beige;
