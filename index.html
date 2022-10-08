@@ -11,7 +11,7 @@
    </head>
    <body>
       <header id="body-header">
-         <nav>
+         <nav id="navbar">
             <ul class="ul-list">
                <li class="horizontal-list"><a href="#">Home</a></li>
                <li class="horizontal-list"><a href="#about">About</a></li>
@@ -19,30 +19,36 @@
                <li class="horizontal-list"><a href="#experience">Experience</a></li>
                <li class="horizontal-list"><a href="#experience">Education</a></li>
                <li class="horizontal-list"><a href="#portfolio">Portfolio</a></li>
-               <li class="horizontal-list"><a href="#contact">Contacts</a></li>
+               <li class="horizontal-list"><a href="#contact">Contact</a></li>
             </ul>
+            <label for="menu_check">
+               <img src="images/realWhiteMenu" alt="menu" />
+            </label>
+            <input type="checkbox" id="menu_check" />
          </nav>
-         <div>
+         <div id="header-content">
             <h1 id="name">Rahul Kumar</h1>
-         </div>
-         <div id="social">
-            <ul class="ul-list">
-               <li class="icon-list">
-                  <a href=""><img src="images/linkedin-logo.png" alt="linkedin" /></a>
-               </li>
-               <li class="icon-list">
-                  <a href=""><img src="images/stackoverflow-logo.png" alt="stackof" /></a>
-               </li>
-               <li class="icon-list">
-                  <a href=""><img src="images/google-plus-logo.png" alt="google" /></a>
-               </li>
-               <li class="icon-list">
-                  <a href=""><img src="images/quora-logo.png" alt="quora" /></a>
-               </li>
-               <li class="icon-list">
-                  <a href=""><img src="images/facebook-logo.png" alt="facebook" /></a>
-               </li>
-            </ul>
+            <div id="social">
+               <ul class="socialIcon_container">
+                  <li class="icon-list">
+                     <a target="_blank" href="https://www.linkedin.com/in/rahul-kumar79529"><img src="images/linkedin-logo.png" alt="linkedin" /></a>
+                  </li>
+                  <li class="icon-list">
+                     <a target="_blank" href="https://stackoverflow.com/users/20164739/rahul-kumar"
+                        ><img src="images/stackoverflow-logo.png" alt="stackof"
+                     /></a>
+                  </li>
+                  <li class="icon-list">
+                     <a target="_blank" href=""><img src="images/google-plus-logo.png" alt="google" /></a>
+                  </li>
+                  <li class="icon-list">
+                     <a target="_blank" href=""><img src="images/quora-logo.png" alt="quora" /></a>
+                  </li>
+                  <li class="icon-list">
+                     <a target="_blank" href=""><img src="images/facebook-logo.png" alt="facebook" /></a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </header>
       <main>
@@ -226,8 +232,6 @@
                <img src="images/portfolio-574071.jpg" alt="portfolio" />
                <img src="images/portfolio-574071.jpg" alt="portfolio" />
                <img src="images/portfolio-574071.jpg" alt="portfolio" />
-               <img src="images/portfolio-574071.jpg" alt="portfolio" />
-               <img src="images/portfolio-574071.jpg" alt="portfolio" />
             </div>
          </section>
 
@@ -244,51 +248,58 @@
             <!-- for main-content -->
             <div id="contact-main">
                <div id="contactForm-container">
-                  <div class="formText">Your Name</div>
-                  <div class="formLine"></div>
-                  <div class="formText">Your Email</div>
-                  <div class="formLine"></div>
-                  <div class="formText">Your Message</div>
-                  <div class="formLine"></div>
-                  <div id="button">SEND MESSAGE</div>
+                  <form action="https://formsubmit.co/el/gisefu" method="POST">
+                     <div class="width">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                     </div>
+                     <div class="width">
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                     </div>
+                     <div class="width">
+                        <textarea name="Message" id="" cols="30" rows="1" placeholder="Your Message" required></textarea>
+                     </div>
+                     <div class="width">
+                        <button id="button" type="submit">SEND MESSAGE</button>
+                     </div>
+                  </form>
                </div>
+
                <div id="address-container">
                   <h3 class="vert-margin">Get In Touch</h3>
                   <p class="vert-margin">
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                     text ever since the 1500s,
+                     I am available from 6 a.m. to 9 p.m. by call, or by e-mail. You can also use contact form if you have any query or suggestion.
                   </p>
                   <h2 class="vert-margin">My Address</h2>
                   <p class="vert-margin">
                      <span id="address-icon"> <img src="images/icons8-location-64.png" alt="location" /> </span>
-                     <span> India </span>
+                     <span> Bihar, India </span>
                   </p>
                   <p class="vert-margin">
                      <span id="address-icon"> <img src="images/android-16.png" alt="location" /> </span>
-                     <span> 8888-777-99-1 </span>
+                     <span> 7970399032 </span>
                   </p>
                   <p class="vert-margin">
                      <span id="address-icon"> <img src="images/mail-letter-16.png" alt="location" /> </span>
-                     <span>rahul_kumar@gmail.com </span>
+                     <span>rajr79529@gmail.com </span>
                   </p>
                </div>
             </div>
             <div id="contact-social">
-               <ul class="ul-list">
+               <ul class="socialIcon_container">
                   <li class="icon-list">
-                     <a href=""><img src="images/linkedin-logo.png" alt="linkedin" /></a>
+                     <a target="_blank" href=""><img src="images/linkedin-logo.png" alt="linkedin" /></a>
                   </li>
                   <li class="icon-list">
-                     <a href=""><img src="images/stackoverflow-logo.png" alt="stackof" /></a>
+                     <a target="_blank" href=""><img src="images/stackoverflow-logo.png" alt="stackof" /></a>
                   </li>
                   <li class="icon-list">
-                     <a href=""><img src="images/google-plus-logo.png" alt="google" /></a>
+                     <a target="_blank" href=""><img src="images/google-plus-logo.png" alt="google" /></a>
                   </li>
                   <li class="icon-list">
-                     <a href=""><img src="images/quora-logo.png" alt="quora" /></a>
+                     <a target="_blank" href=""><img src="images/quora-logo.png" alt="quora" /></a>
                   </li>
                   <li class="icon-list">
-                     <a href=""><img src="images/facebook-logo.png" alt="facebook" /></a>
+                     <a target="_blank" href=""><img src="images/facebook-logo.png" alt="facebook" /></a>
                   </li>
                </ul>
             </div>
